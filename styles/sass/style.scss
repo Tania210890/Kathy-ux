@@ -1,0 +1,302 @@
+// vars
+$black: #131D28;
+$gray: #F6F6F6;
+$green: #197050;
+$white: #ffffff;
+$mint: #AEEDD6;
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    a {
+        color: $black;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-right: 2rem;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .cta-links {
+        text-align: right;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    
+    border-radius: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3rem;
+    transition: all .3s;
+
+
+    &-black {
+        background-color: $black;
+        color: $white;
+        &:hover {
+            color: $white;
+            transform: scale(1.05);
+        }
+    }
+    &-white {
+        background-color: $white;
+        color: $black;
+        &:hover {
+            color: $black;
+            transform: scale(1.05);
+        }
+    }
+
+    &-list {
+        font-weight: 700;
+    }
+}
+
+#section-initial {
+    padding-top: 4rem;
+    margin-bottom: 8rem;
+
+    .img-hero-right {
+        border-radius: 1rem;
+    }
+}
+
+.cards-container {
+    display: inline-flex;
+    overflow-x: scroll;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .event-card {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .event-card {
+        border-color: $white;
+        width: 250px;
+        min-width: 250px;
+        margin-right: 1.5rem;
+        
+        
+
+        .card-photo {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .info-card {
+            font-size: 1.5rem;
+            background-color: $gray;
+            padding: 1.5rem 1rem 2rem 1rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        .info-link {
+            text-decoration: none;
+            color: $green;
+        }
+    }
+}
+
+.section {
+    margin-top: 8rem;
+}
+
+.amenities-container {
+    @media (min-width: 576px) {
+        display: flex;
+    }
+}
+
+.amenitie-card {
+    .amenitie {
+        &-photo {
+            margin-bottom: 1.5rem;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        &-description {
+            font-size: 1.5rem;
+            margin-bottom: 7rem;
+        }
+    }
+}
+
+#form-container {
+    background-color: $black;
+    border-radius: 1rem;
+    color: $white;
+    font-weight: 400;
+    padding: 5rem 2rem;
+
+    form {
+        margin-top: 4rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-bottom: 3rem;
+        background-color: $black;
+        border: 1px solid $white;
+        padding: 2rem;
+        color: $white;
+        font-weight: 300;
+    }
+
+    .cta {
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    hr {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .photo-bere {
+        border-radius: 100%;
+    }
+
+    .info-bottom {
+        margin-top: 2rem;
+    }
+}
+
+.whitus-section {
+    img {
+        border-radius: 1rem;
+        width: 100%;
+    }
+    .withus-info {
+        margin-top: 2rem;
+        background-color: $gray;
+        padding: 5rem 3rem;
+        border-radius: 1rem;
+
+        @media (min-width: 576px) {
+            margin-top: 0;
+        }
+    }
+}
+
+footer {
+    background-color: $black;
+    margin-top: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: $white;
+    font-size: 1.5rem;
+
+    .logo-square {
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    hr {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .title-links {
+        margin-top: 5rem;
+        opacity: .8;
+        font-weight: 700;
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        line-height: 4rem;
+        padding-left: 0;
+        img {
+            margin-right: 1.5rem;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                color: $mint;
+            }
+        }
+    }
+
+    .social-links {
+
+        img {
+            width: 40px;
+            margin-top: 4rem;
+            margin-right: 1.5rem;
+    
+            &:first-child {
+                height: 24px;
+            }
+        }
+        
+    }
+}
+
+
+.clients-container {
+    .col-3 {
+        justify-self: center;
+    }
+    img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
